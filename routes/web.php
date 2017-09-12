@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-//    return view('welcome');
-    return view('component');
+    return view('welcome');
+//    return view('component');
 });
 
 Route::get("test", "ProductController@user");
