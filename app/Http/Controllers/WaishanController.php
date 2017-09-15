@@ -25,6 +25,8 @@ class WaishanController extends Controller
     {
         $shop = new Shop();
         $shop->name = "Myat Htut";
+        $shop->save();
+        return "save"
 
 
     }
