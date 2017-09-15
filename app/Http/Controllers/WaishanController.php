@@ -11,11 +11,21 @@ class WaishanController extends Controller
     {
 //        $shop = Shop::find(1);
 //        $item = $shop->history;
-        $cats = Shop::with('history.item')->where('id', 2)->get();
-        foreach ($cats as $cat) {
-            echo $cat;
-        }
+//        $cats = Shop::with('history.item')->where('id', 2)->get();
+//        foreach ($cats as $cat) {
+//            echo $cat;
+//        }
 //        return $cats;
+        $shop = Shop::all();
+        return $shop;
+
+    }
+
+    public function create(Request $request)
+    {
+        $shop = new Shop();
+        $shop->name = "Myat Htut";
+
 
     }
 }

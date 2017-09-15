@@ -21,4 +21,5 @@ Route::get("testName", "ProductController@productTest");
 Route::get("cat", "ProductController@cat");
 Route::get("manyThrough", "ProductController@manyThrough");
 Route::get("shop", "WaishanController@index");
+Route::get("shop/create", "WaishanController@create");
 
