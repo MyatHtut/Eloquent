@@ -14,9 +14,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
         $fooService = new \App\Services\TestingService();
         return $this->app->bind('Testing', \App\Services\TestingService::class);
-        Schema::defaultStringLength(191);
+
     }
 
     /**
