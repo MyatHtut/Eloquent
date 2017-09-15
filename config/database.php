@@ -78,7 +78,7 @@ return [
             'prefix' => '',
         ],
         'heroku' => [
-            'default'   => 'mysql',
+            'driver'   => 'mysql',
             'host'     => parse_url(getenv("CLEARDB_DATABASE_URL"))["host"],
             'database' => substr(parse_url(getenv("CLEARDB_DATABASE_URL"))["path"], 1),
             'username' => parse_url(getenv("CLEARDB_DATABASE_URL"))["user"],
